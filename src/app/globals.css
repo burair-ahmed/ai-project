@@ -19,3 +19,70 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+/* styles/globals.css */
+
+/* Add some basic styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type='file'] {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #cccccc;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.job-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.job-item h3 {
+  margin: 0;
+  color: #333;
+}
+
+.job-item p {
+  margin: 5px 0;
+}
+
+.job-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.job-item a:hover {
+  text-decoration: underline;
+}
+

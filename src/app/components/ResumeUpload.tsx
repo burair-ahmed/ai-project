@@ -120,6 +120,7 @@ export default function ResumeUpload() {
           </ul>
         </div>
       )}
+      
     </div>
   );
 }

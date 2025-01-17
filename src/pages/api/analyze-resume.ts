@@ -194,7 +194,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "gpt-3.5-turbo",
+        model: "gpt-4-turbo",
         messages: [
           {
             role: "system",
@@ -202,7 +202,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           },
           {
             role: "user",
-            content: `Please analyze the resume content provided to extract key skills, job roles, relevant expertise, and any certifications or qualifications. Based on the content of the resume, generate one primary keyword that best represents the individual’s expertise and can be used for searching relevant job opportunities. \n\n${resumeText}`,
+            content: `Please analyze the provided resume content and extract key skills, job roles, relevant expertise, certifications, and qualifications. Based on this analysis, generate a single primary keyword that best represents the individual's expertise in a corporate and HR context. This keyword should be widely recognized and used in job searches on LinkedIn, making it relevant for fetching job opportunities. The keyword must be specific to the individual's core strengths and easily searchable by employers and HR professionals. \n\n${resumeText}`,
           },
         ],
         max_tokens: 1000,
